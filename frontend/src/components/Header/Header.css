@@ -1,0 +1,65 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/asd.jpg') no-repeat ;
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+    background-size:cover;
+    position: relative;
+    border-radius: 10px;
+    color:#ffffff
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    /* left: 6vw; */
+    right: 1vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    font-weight:500;
+    /* color: white; */
+    font-size: max(4.5vw,22px);
+    /* justify-content:end; */
+    text-align: end;
+}
+.header-contents h2 span{
+    background-color: rgba(47, 43, 40, 0.39);
+}
+.header-contents p{
+    /* color: white; */
+    font-size: 1vw;
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+}
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media(max-width:750px){
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+       display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
